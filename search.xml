@@ -1,11 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title><![CDATA[test]]></title>
-    <url>%2F2018%2F12%2F18%2Ftest%2F</url>
-    <content type="text"><![CDATA[var ap = new APlayer({ element: document.getElementById("aplayer-phJkmpKz"), narrow: false, autoplay: false, showlrc: false, music: { title: "走马", author: "me", url: "/music/走马.mp3", pic: "", lrc: "" } }); window.aplayers || (window.aplayers = []); window.aplayers.push(ap);]]></content>
-  </entry>
-  <entry>
     <title><![CDATA[Markdown语法]]></title>
     <url>%2F2017%2F06%2F06%2FMarkdown%E8%AF%AD%E6%B3%95%2F</url>
     <content type="text"><![CDATA[这是我的第一篇文章首先，回忆一下Markdown语法 标题 标题可以根据字体大小分为六级，分别用不同数量的#表示【效果】 这是一级标题这是二级标题这是三级标题这是四级标题这是五级标题这是六级标题【输入】123456#这是一级标题##这是二级标题###这是三级标题####这是四级标题#####这是五级标题######这是六级标题 文本 【效果】粗体斜体粗体+斜体【输入】123**这是粗体***这是斜体****这是粗体+斜体*** 图片 【效果】【输入】1![我的博客主页](Markdown语法/我的主页.png) 列表 列表分为有序列表和无序列表无序列表可以通过在每行文本前输入*,+,-来实现【效果】 星号实现的列表 加号实现的列表 减号实现的列表 注意符号与文本之间要有一个空格 【输入】1234* 星号实现的列表+ 加号实现的列表- 减号实现的列表* 注意符号与文本之间要有一个空格 有序列表可以通过在每行文本前面输入数字+.+空格来实现【效果】 第一行 第二行 第三行 【输入】1231. 第一行2. 第二行3. 第三行 引用 【效果】 这是一段引用啦 【输入】1&gt;这是一段引用啦 行内代码块 行内代码块可用于关键字词，将其与普通文本文件分别开来，其用法是在文本内容外套上”`“，即反引号。 【效果】这是一段行内代码块【输入】1`这是一段行内代码块` 代码块 【效果】12345public class test&#123; public static void main()&#123; System.out.println("This is a test_class!"); &#125;&#125; 表格 【效果】|默认|居中|左对齐|右对齐||–|:-:|:-|-:||换行\n换行失败|我的Markdown|不支持|换行||支持斜体|粗体|斜体+粗体|||# 不支持标题|支持链接||支持行内代码块 | 【输入】12345|默认|居中|左对齐|右对齐||--|:-:|:-|-:||换行\n换行失败|我的Markdown|不支持|换行||*支持斜体*|**粗体**|***斜体+粗体***|||# 不支持标题|[支持链接](http://jianshu.com)|![支持图片](https://cdn.sspai.com/attachment/origin/2014/04/15/69488.png?imageMogr2/quality/90/thumbnail/100x)|`支持行内代码块` | 删除线 【效果】删除线【输入】1~~删除线~~ 分割线 分割线可使用*、-来实现。【效果】 【输入】12---***]]></content>
