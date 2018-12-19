@@ -593,8 +593,8 @@
 <h1 id="这是我们演示将本机的系统盘转换为GPT文件格式"><a href="#这是我们演示将本机的系统盘转换为GPT文件格式" class="headerlink" title="这是我们演示将本机的系统盘转换为GPT文件格式"></a>这是我们演示将本机的系统盘转换为GPT文件格式</h1><h2 id="步骤一"><a href="#步骤一" class="headerlink" title="步骤一:"></a>步骤一:</h2><p>启动进入WinRE环境，如果不懂如何进入，请<a href="http://colins110.cn/2017/06/11/Win10%E8%BF%9B%E5%85%A5%E6%81%A2%E5%A4%8D%E6%A8%A1%E5%BC%8F/" target="_blank" rel="noopener">点击阅读</a></p>
 <p>进入后选择<strong>命令提示符</strong></p>
 <h2 id="步骤二"><a href="#步骤二" class="headerlink" title="步骤二"></a>步骤二</h2><p>使用命令disk查看里的磁盘序号。<br><img src="/2017/06/11/使用win10创意者更新自带工具MBR2GPT完成系统盘的MBR到GPT的无损转换/1.png" alt=""></p>
-<h2 id="步骤三"><a href="#步骤三" class="headerlink" title="步骤三"></a>步骤三</h2><p>启动<strong>MBR2GPT</strong>程序，带上参数/validate和/disk:1，用于指定对1号磁盘（系统盘）进行检查，如果提示successfully说明可以进行转换。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mbr2gpt /validate /disk:1</span><br></pre></td></tr></table></figure></p>
-<p>开始转换<br><img src="/2017/06/11/使用win10创意者更新自带工具MBR2GPT完成系统盘的MBR到GPT的无损转换/2.png" alt=""><br>完成后类似如下提示:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">MBR2GPT will now attempt to convert disk 0.</span><br><span class="line">If conversion is successful the disk can only be booted in GPT mode.</span><br><span class="line">These changes cannot be undone!</span><br><span class="line"></span><br><span class="line">MBR2GPT: Attempting to convert disk 0</span><br><span class="line">MBR2GPT: Retrieving layout of disk</span><br><span class="line">MBR2GPT: Validating layout, disk sector size is: 512 bytes</span><br><span class="line">MBR2GPT: Trying to shrink the system partition</span><br><span class="line">MBR2GPT: Trying to shrink the OS partition</span><br><span class="line">MBR2GPT: Creating the EFI system partition</span><br><span class="line">MBR2GPT: Installing the new boot files</span><br><span class="line">MBR2GPT: Performing the layout conversion</span><br><span class="line">MBR2GPT: Migrating default boot entry</span><br><span class="line">MBR2GPT: Adding recovery boot entry</span><br><span class="line">MBR2GPT: Fixing drive letter mapping</span><br><span class="line">MBR2GPT: Conversion completed successfully</span><br><span class="line">MBR2GPT: Before the new system can boot properly you need to switch the firmware to boot to UEFI mode!</span><br></pre></td></tr></table></figure></p>
+<h2 id="步骤三"><a href="#步骤三" class="headerlink" title="步骤三"></a>步骤三</h2><p>启动<strong>MBR2GPT</strong>程序，带上参数/validate和/disk:1，用于指定对1号磁盘（系统盘）进行检查，如果提示successfully说明可以进行转换。<br><figure class="highlight groovy"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mbr2gpt <span class="regexp">/validate /</span><span class="string">disk:</span><span class="number">1</span></span><br></pre></td></tr></table></figure></p>
+<p>开始转换<br><img src="/2017/06/11/使用win10创意者更新自带工具MBR2GPT完成系统盘的MBR到GPT的无损转换/2.png" alt=""><br>完成后类似如下提示:<br><figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">MBR2GPT will now attempt <span class="keyword">to</span> convert disk 0.</span><br><span class="line"><span class="keyword">If</span> conversion is successful the disk can only be booted <span class="keyword">in</span> GPT mode.</span><br><span class="line">These changes cannot be undone!</span><br><span class="line"></span><br><span class="line">MBR2GPT: Attempting <span class="keyword">to</span> convert disk 0</span><br><span class="line">MBR2GPT: Retrieving layout of disk</span><br><span class="line">MBR2GPT: Validating layout, disk sector size is: 512 bytes</span><br><span class="line">MBR2GPT: Trying <span class="keyword">to</span> shrink the<span class="built_in"> system </span>partition</span><br><span class="line">MBR2GPT: Trying <span class="keyword">to</span> shrink the OS partition</span><br><span class="line">MBR2GPT: Creating the EFI<span class="built_in"> system </span>partition</span><br><span class="line">MBR2GPT: Installing the new boot files</span><br><span class="line">MBR2GPT: Performing the layout conversion</span><br><span class="line">MBR2GPT: Migrating<span class="built_in"> default </span>boot entry</span><br><span class="line">MBR2GPT: Adding recovery boot entry</span><br><span class="line">MBR2GPT: Fixing drive letter mapping</span><br><span class="line">MBR2GPT: Conversion completed successfully</span><br><span class="line">MBR2GPT: Before the new<span class="built_in"> system </span>can boot properly you need <span class="keyword">to</span> switch the<span class="built_in"> firmware </span><span class="keyword">to</span> boot <span class="keyword">to</span> UEFI mode!</span><br></pre></td></tr></table></figure></p>
 <p>最后记得将主板上的启动模式改为<strong>UEFI</strong> mode!<br>更多细节参见<a href="https://docs.microsoft.com/zh-cn/windows/deployment/mbr-to-gpt" target="_blank" rel="noopener">官方手册</a></p>
 
       
@@ -605,7 +605,23 @@
     
     
     
+    
+    
+      <div>
+        <div>
+    
+        <div style="text-align:center;font-size:13px;letter-spacing:10px;user-select:none;margin-top:20px;color:#bbb;">-------------本文结束啦<i class="fa fa-heart"></i>感谢您阅读-------------</div>
+    
+</div>
+      </div>
+    
 
+    
+      <div>
+        
+      </div>
+    
+    
     
 
     
@@ -828,6 +844,15 @@
             </div>
           
 
+          
+             <div class="cc-license motion-element" itemprop="license">
+              
+                
+              
+              
+              
+              <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" class="cc-opacity" rel="noopener" target="_blank"><img src="/images/cc-by-nc-sa.svg" alt="Creative Commons"></a>
+             </div>
           
 
           
