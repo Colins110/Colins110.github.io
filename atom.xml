@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.colins110.cn/"/>
-  <updated>2018-12-18T15:07:12.158Z</updated>
+  <updated>2018-12-20T06:43:15.568Z</updated>
   <id>http://www.colins110.cn/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>test</title>
+    <link href="http://www.colins110.cn/2018/12/20/test/"/>
+    <id>http://www.colins110.cn/2018/12/20/test/</id>
+    <published>2018-12-20T06:43:15.000Z</published>
+    <updated>2018-12-20T06:43:15.568Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot; cla
+      
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>ubuntu安装nodejs</title>

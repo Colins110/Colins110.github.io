@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[test]]></title>
+    <url>%2F2018%2F12%2F20%2Ftest%2F</url>
+    <content type="text"><![CDATA[]]></content>
+  </entry>
+  <entry>
     <title><![CDATA[ubuntu安装nodejs]]></title>
     <url>%2F2018%2F04%2F07%2Fubuntu%E5%AE%89%E8%A3%85nodejs%2F</url>
     <content type="text"><![CDATA[​ 通过ubuntu包管理器安装nodejs，需要引入第三方库。nodejs官方提供了添加脚本。在deb.nodesource.com 中可以看到。在终端中运行:12curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -sudo apt-get install -y nodejs 就可以安装最新的nodejs 8.x版本了。其他版本可在deb.nodesource.com上查找。]]></content>
