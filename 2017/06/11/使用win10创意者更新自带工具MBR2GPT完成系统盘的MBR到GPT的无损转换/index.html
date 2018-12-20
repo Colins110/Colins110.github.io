@@ -511,16 +511,6 @@
 
           
             
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/2017/06/11/使用win10创意者更新自带工具MBR2GPT完成系统盘的MBR到GPT的无损转换/#comments" itemprop="discussionUrl">
-                  <span class="post-meta-item-text">评论数：</span> <span class="post-comments-count valine-comment-count" data-xid="/2017/06/11/使用win10创意者更新自带工具MBR2GPT完成系统盘的MBR到GPT的无损转换/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
           
 
           
@@ -687,10 +677,33 @@
           
 
   
-    <div class="comments" id="comments">
-    </div>
 
   
+    <div id="disqus_proxy_thread"></div>
+        <div id="disqus_thread"></div>
+
+          <script type="text/javascript">
+              window.disqusProxy = {
+                username: 'colins110',
+                server: '95.169.14.254',
+                port: '5509',
+                defaultAvatar: '/images/avatar.png',
+                adminAvatar: '/images/avatar/avatar-admin.jpg',
+                identifier: '2017/06/11/使用win10创意者更新自带工具MBR2GPT完成系统盘的MBR到GPT的无损转换/'
+              };
+              window.disqus_config = function () {
+                this.page.url = 'http://www.colins110.cn/2017/06/11/使用win10创意者更新自带工具MBR2GPT完成系统盘的MBR到GPT的无损转换/';
+                this.page.identifier = '2017/06/11/使用win10创意者更新自带工具MBR2GPT完成系统盘的MBR到GPT的无损转换/';
+              };
+              window.onload=function(){
+                var s = document.createElement('script');
+                s.src = "/static/js/main.0d0338ae.js";
+                s.async = true;
+                document.body.appendChild(s);
+              }
+          </script>
+          <link rel="stylesheet" href="/static/css/main.0603c539.css">
+      
 
 
 
@@ -727,11 +740,13 @@
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
             
-              <img class="site-author-image" itemprop="image" src="/images/avatar.png" alt="Colin">
+              <a href="/">
+                <img class="site-author-image" itemprop="image" src="/images/avatar.png" alt="Colin">
+              <a>
             
               <p class="site-author-name" itemprop="name">Colin</p>
               <p class="site-description motion-element" itemprop="description">Colin的个人站</p>
-          </div>
+          </a></a></div>
 
           
             <nav class="site-state motion-element">
@@ -1060,31 +1075,6 @@
 
 
 
-
-  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
-  
-  
-  <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
-  
-  <script type="text/javascript">
-    var GUEST = ['nick','mail','link'];
-    var guest = 'nick,mail,link';
-    guest = guest.split(',').filter(function (item) {
-      return GUEST.indexOf(item)>-1;
-    });
-    new Valine({
-        el: '#comments' ,
-        verify: false,
-        notify: false,
-        appId: 'EujqQXa0pEOsHEpHoax43IoM-gzGzoHsz',
-        appKey: 'XP9FRLgfkw1BEEdXYYjBEsQS',
-        placeholder: 'Just go go',
-        avatar:'mm',
-        meta:guest,
-        pageSize:'10' || 10,
-        visitor: true
-    });
-  </script>
 
 
 
@@ -1417,6 +1407,72 @@
   
 
   
+  <script>
+    
+    function addCount(Counter) {
+      var $visitors = $(".leancloud_visitors");
+      var url = $visitors.attr('id').trim();
+      var title = $visitors.attr('data-flag-title').trim();
+
+      Counter('get', '/classes/Counter', { where: JSON.stringify({ url }) })
+        .done(function ({ results }) {
+          if (results.length > 0) {
+            var counter = results[0];
+            
+            Counter('put', `/classes/Counter/${counter.objectId}`, JSON.stringify({ time: { "__op":"Increment", "amount":1 } }))
+            
+            .done(function () {
+                  var $element = $(document.getElementById(url));
+                  $element.find('.leancloud-visitors-count').text(counter.time + 1);
+            })
+            
+            .fail(function ({ responseJSON }) {
+                console.log('Failed to save Visitor num, with error message: ' + responseJSON.error);
+            })
+          } else {
+            
+              Counter('post', '/classes/Counter', JSON.stringify({ title: title, url: url, time: 1}))
+                .done(function () {
+                  var $element = $(document.getElementById(url));
+                  $element.find('.leancloud-visitors-count').text(1);
+                })
+                .fail(function () {
+                  console.log('Failed to create');
+                });
+            
+          }
+        })
+      .fail(function ({ responseJSON }) {
+        console.log('LeanCloud Counter Error:' + responseJSON.code + " " + responseJSON.error);
+      });
+    }
+    
+
+    $(function() {
+      $.get('https://app-router.leancloud.cn/2/route?appId=' + "EujqQXa0pEOsHEpHoax43IoM-gzGzoHsz")
+        .done(function ({ api_server }) {
+          var Counter = function (method, url, data) {
+            return $.ajax({
+              method: method,
+              url: `https://${api_server}/1.1${url}`,
+              headers: {
+                'X-LC-Id': "EujqQXa0pEOsHEpHoax43IoM-gzGzoHsz",
+                'X-LC-Key': "XP9FRLgfkw1BEEdXYYjBEsQS",
+                'Content-Type': 'application/json',
+              },
+              data: data,
+            });
+          };
+          
+          addCount(Counter);
+          
+        })
+    });
+  </script>
+
+
+
+  
 
   
 
@@ -1538,6 +1594,7 @@ const ap = new APlayer({
         theme: '#505d6b'
         }]
 });
+ap.lrc.hide();
 </script>
 
 </body>
