@@ -516,8 +516,7 @@
                   <i class="fa fa-comment-o"></i>
                 </span>
                 <a href="/2018/04/07/ubuntu安装nodejs/#comments" itemprop="discussionUrl">
-                
-                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2018/04/07/ubuntu安装nodejs/" itemprop="commentCount"></span>
+                  <span class="post-meta-item-text">评论数：</span> <span class="post-comments-count valine-comment-count" data-xid="/2018/04/07/ubuntu安装nodejs/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -750,8 +749,7 @@
                   <i class="fa fa-comment-o"></i>
                 </span>
                 <a href="/2017/07/09/使用IntelliJ-IDEA创建Hibernate项目/#comments" itemprop="discussionUrl">
-                
-                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2017/07/09/使用IntelliJ-IDEA创建Hibernate项目/" itemprop="commentCount"></span>
+                  <span class="post-meta-item-text">评论数：</span> <span class="post-comments-count valine-comment-count" data-xid="/2017/07/09/使用IntelliJ-IDEA创建Hibernate项目/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -985,8 +983,7 @@
                   <i class="fa fa-comment-o"></i>
                 </span>
                 <a href="/2017/06/11/使用win10创意者更新自带工具MBR2GPT完成系统盘的MBR到GPT的无损转换/#comments" itemprop="discussionUrl">
-                
-                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2017/06/11/使用win10创意者更新自带工具MBR2GPT完成系统盘的MBR到GPT的无损转换/" itemprop="commentCount"></span>
+                  <span class="post-meta-item-text">评论数：</span> <span class="post-comments-count valine-comment-count" data-xid="/2017/06/11/使用win10创意者更新自带工具MBR2GPT完成系统盘的MBR到GPT的无损转换/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -1220,8 +1217,7 @@
                   <i class="fa fa-comment-o"></i>
                 </span>
                 <a href="/2017/06/06/Markdown语法/#comments" itemprop="discussionUrl">
-                
-                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2017/06/06/Markdown语法/" itemprop="commentCount"></span>
+                  <span class="post-meta-item-text">评论数：</span> <span class="post-comments-count valine-comment-count" data-xid="/2017/06/06/Markdown语法/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -1459,8 +1455,7 @@
                   <i class="fa fa-comment-o"></i>
                 </span>
                 <a href="/2017/06/01/Win10进入恢复模式/#comments" itemprop="discussionUrl">
-                
-                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2017/06/01/Win10进入恢复模式/" itemprop="commentCount"></span>
+                  <span class="post-meta-item-text">评论数：</span> <span class="post-comments-count valine-comment-count" data-xid="/2017/06/01/Win10进入恢复模式/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -1922,9 +1917,7 @@
 
   
 
-  
-    <script id="dsq-count-scr" src="https://colins110.disqus.com/count.js" async></script>
-  
+
 
   
 
@@ -1935,7 +1928,30 @@
 
 
 
-
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  
+  
+  <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+  
+  <script type="text/javascript">
+    var GUEST = ['nick','mail','link'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(function (item) {
+      return GUEST.indexOf(item)>-1;
+    });
+    new Valine({
+        el: '#comments' ,
+        verify: false,
+        notify: false,
+        appId: 'EujqQXa0pEOsHEpHoax43IoM-gzGzoHsz',
+        appKey: 'XP9FRLgfkw1BEEdXYYjBEsQS',
+        placeholder: 'Just go go',
+        avatar:'mm',
+        meta:guest,
+        pageSize:'10' || 10,
+        visitor: false
+    });
+  </script>
 
 
 
