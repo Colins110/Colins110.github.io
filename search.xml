@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[git设置和取消代理]]></title>
+    <url>%2F2019%2F03%2F08%2Fgit%E8%AE%BE%E7%BD%AE%E5%92%8C%E5%8F%96%E6%B6%88%E4%BB%A3%E7%90%86%2F</url>
+    <content type="text"><![CDATA[查看当前代理设置：12git config --global http.proxygit config --global https.proxy 设置代理：1234git config --global http.proxy 'http://127.0.0.1:1080'git config --global https.proxy 'https://127.0.0.1:1080'git config --global http.proxy 'socks5://127.0.0.1:1080' git config --global https.proxy 'socks5://127.0.0.1:1080' 取消设置：12git config --global --unset http.proxygit config --global --unset https.proxy]]></content>
+      <categories>
+        <category>git</category>
+      </categories>
+      <tags>
+        <tag>git使用</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[台湾清华彭明辉教授的研究生手册(学习方法论)]]></title>
     <url>%2F2019%2F03%2F08%2F%E5%8F%B0%E6%B9%BE%E6%B8%85%E5%8D%8E%E5%BD%AD%E6%98%8E%E8%BE%89%E6%95%99%E6%8E%88%E7%9A%84%E7%A0%94%E7%A9%B6%E7%94%9F%E6%89%8B%E5%86%8C-%E5%AD%A6%E4%B9%A0%E6%96%B9%E6%B3%95%E8%AE%BA%2F</url>
     <content type="text"><![CDATA[原文地址]]></content>
