@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.colins110.cn/"/>
-  <updated>2019-03-18T06:52:34.068Z</updated>
+  <updated>2019-03-19T07:30:18.807Z</updated>
   <id>http://www.colins110.cn/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>DaCapo benchmark环境搭建</title>
+    <link href="http://www.colins110.cn/2019/03/19/DaCapo-benchmark%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/"/>
+    <id>http://www.colins110.cn/2019/03/19/DaCapo-benchmark环境搭建/</id>
+    <published>2019-03-19T07:06:42.000Z</published>
+    <updated>2019-03-19T07:30:18.807Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>虚拟化性能测试需要使用benchmark测试，这里使用了DaCapo来实现。<br>DaCapo基于java编写，需要java运行时环境，所以需要配置java环境。</p><ol><li><p>在配置环境之前需要将host的hugepage关闭，运行一下命令关闭：</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo bash -c <span class="string">"echo never &gt; /sys/kernel/mm/transparent_hugepage/enabled"</span></span><br></pre></td></tr></table></figure></li><li><p>在guest中配置java</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">sudo add-apt-repository ppa:webupd8team/java</span><br><span class="line">sudo apt update</span><br><span class="line">sudo apt install oracle-java8-installer</span><br></pre></td></tr></table></figure><p> 使用<code>java --version</code>测试是否安装成功</p></li><li>下载DaCapo包<br>下载地址：<a href="https://sourceforge.net/projects/dacapobench/files/" target="_blank" rel="noopener">dacapo-9.12-MR1-bach.jar</a></li><li><p>常用命令</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">java -jar dacapo-9.12-MR1-bach.jar   <span class="comment">#获取指令使用信息</span></span><br><span class="line">java -jar dacapo-9.12-MR1-bach.jar -l   <span class="comment">#列出所有benchmark</span></span><br><span class="line">java -jar dacapo-9.12-MR1-bach.jar avrora（benchmark名)   <span class="comment">#运行相应benchmark</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#dacapo对每一个benchmark提供了三种不同大小的负载</span></span><br><span class="line">java -jar dacapo-9.12-MR1-bach.jar -s small avrora   <span class="comment">#以小负载运行benchmark</span></span><br><span class="line">java -jar dacapo-9.12-MR1-bach.jar -s default avrora   <span class="comment">#以默认负载运行benchmark</span></span><br><span class="line">java -jar dacapo-9.12-MR1-bach.jar -s large avrora   <span class="comment">#以大负载运行benchmark</span></span><br></pre></td></tr></table></figure><p>在不同负载下，同一个benchmark运行时间不同。benchmark相关的配置文件在文件夹dacapo-9.12-MR1-bach.jar/cnf中。<br>附件：<a href="http://delivery.acm.org/10.1145/1170000/1167488/p169-blackburn.pdf?ip=222.195.68.197&amp;id=1167488&amp;acc=ACTIVE%20SERVICE&amp;key=BF85BBA5741FDC6E%2EA4F9C023AC60E700%2E4D4702B0C3E38B35%2E4D4702B0C3E38B35&amp;__acm__=1537702853_3216a7779381b3c7bf505547e1a4e031" target="_blank" rel="noopener">《The DaCapo Benchmarks: Java Benchmarking Development and Analysis》</a></p></li></ol>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot; cla
+      
+    
+    </summary>
+    
+      <category term="虚拟化" scheme="http://www.colins110.cn/categories/%E8%99%9A%E6%8B%9F%E5%8C%96/"/>
+    
+    
+      <category term="linux" scheme="http://www.colins110.cn/tags/linux/"/>
+    
+  </entry>
   
   <entry>
     <title>[转]Linux内核高端内存</title>
