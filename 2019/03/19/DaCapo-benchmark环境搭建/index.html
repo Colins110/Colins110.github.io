@@ -145,18 +145,18 @@
 
 
 
-  <meta name="description" content="虚拟化性能测试需要使用benchmark测试，这里使用了DaCapo来实现。DaCapo基于java编写，需要java运行时环境，所以需要配置java环境。  在配置环境之前需要将host的hugepage关闭，运行一下命令关闭： 1sudo bash -c &quot;echo never &amp;gt; /sys/kernel/mm/transparent_hugepage/enabled&quot;  在guest中">
+  <meta name="description" content="虚拟化性能测试需要使用benchmark测试，这里使用了DaCapo来实现。DaCapo基于java编写，需要java运行时环境，所以需要配置java环境。项目主页  在配置环境之前需要将host的hugepage关闭，运行一下命令关闭： 1sudo bash -c &quot;echo never &amp;gt; /sys/kernel/mm/transparent_hugepage/enabled&quot;  在gu">
 <meta name="keywords" content="linux">
 <meta property="og:type" content="article">
 <meta property="og:title" content="DaCapo benchmark环境搭建">
 <meta property="og:url" content="http://www.colins110.cn/2019/03/19/DaCapo-benchmark环境搭建/index.html">
 <meta property="og:site_name" content="Colin&#39;s Home">
-<meta property="og:description" content="虚拟化性能测试需要使用benchmark测试，这里使用了DaCapo来实现。DaCapo基于java编写，需要java运行时环境，所以需要配置java环境。  在配置环境之前需要将host的hugepage关闭，运行一下命令关闭： 1sudo bash -c &quot;echo never &amp;gt; /sys/kernel/mm/transparent_hugepage/enabled&quot;  在guest中">
+<meta property="og:description" content="虚拟化性能测试需要使用benchmark测试，这里使用了DaCapo来实现。DaCapo基于java编写，需要java运行时环境，所以需要配置java环境。项目主页  在配置环境之前需要将host的hugepage关闭，运行一下命令关闭： 1sudo bash -c &quot;echo never &amp;gt; /sys/kernel/mm/transparent_hugepage/enabled&quot;  在gu">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-03-19T07:30:18.807Z">
+<meta property="og:updated_time" content="2019-03-19T13:20:54.485Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="DaCapo benchmark环境搭建">
-<meta name="twitter:description" content="虚拟化性能测试需要使用benchmark测试，这里使用了DaCapo来实现。DaCapo基于java编写，需要java运行时环境，所以需要配置java环境。  在配置环境之前需要将host的hugepage关闭，运行一下命令关闭： 1sudo bash -c &quot;echo never &amp;gt; /sys/kernel/mm/transparent_hugepage/enabled&quot;  在guest中">
+<meta name="twitter:description" content="虚拟化性能测试需要使用benchmark测试，这里使用了DaCapo来实现。DaCapo基于java编写，需要java运行时环境，所以需要配置java环境。项目主页  在配置环境之前需要将host的hugepage关闭，运行一下命令关闭： 1sudo bash -c &quot;echo never &amp;gt; /sys/kernel/mm/transparent_hugepage/enabled&quot;  在gu">
 
 
 
@@ -464,7 +464,7 @@
                 
               
 
-              <time title="创建时间：2019-03-19 15:06:42 / 修改时间：15:30:18" itemprop="dateCreated datePublished" datetime="2019-03-19T15:06:42+08:00">2019-03-19</time>
+              <time title="创建时间：2019-03-19 15:06:42 / 修改时间：21:20:54" itemprop="dateCreated datePublished" datetime="2019-03-19T15:06:42+08:00">2019-03-19</time>
             
 
             
@@ -525,7 +525,7 @@
                 
                   <span class="post-meta-item-text">本文字数：</span>
                 
-                <span title="本文字数">950</span>
+                <span title="本文字数">954</span>
               
 
               
@@ -559,7 +559,7 @@
       
 
       
-        <p>虚拟化性能测试需要使用benchmark测试，这里使用了DaCapo来实现。<br>DaCapo基于java编写，需要java运行时环境，所以需要配置java环境。</p>
+        <p>虚拟化性能测试需要使用benchmark测试，这里使用了DaCapo来实现。<br>DaCapo基于java编写，需要java运行时环境，所以需要配置java环境。<br><a href="http://dacapobench.org/" target="_blank" rel="noopener">项目主页</a></p>
 <ol>
 <li><p>在配置环境之前需要将host的hugepage关闭，运行一下命令关闭：</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo bash -c <span class="string">"echo never &gt; /sys/kernel/mm/transparent_hugepage/enabled"</span></span><br></pre></td></tr></table></figure>
@@ -571,7 +571,7 @@
 <li>下载DaCapo包<br>下载地址：<a href="https://sourceforge.net/projects/dacapobench/files/" target="_blank" rel="noopener">dacapo-9.12-MR1-bach.jar</a></li>
 <li><p>常用命令</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">java -jar dacapo-9.12-MR1-bach.jar   <span class="comment">#获取指令使用信息</span></span><br><span class="line">java -jar dacapo-9.12-MR1-bach.jar -l   <span class="comment">#列出所有benchmark</span></span><br><span class="line">java -jar dacapo-9.12-MR1-bach.jar avrora（benchmark名)   <span class="comment">#运行相应benchmark</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#dacapo对每一个benchmark提供了三种不同大小的负载</span></span><br><span class="line">java -jar dacapo-9.12-MR1-bach.jar -s small avrora   <span class="comment">#以小负载运行benchmark</span></span><br><span class="line">java -jar dacapo-9.12-MR1-bach.jar -s default avrora   <span class="comment">#以默认负载运行benchmark</span></span><br><span class="line">java -jar dacapo-9.12-MR1-bach.jar -s large avrora   <span class="comment">#以大负载运行benchmark</span></span><br></pre></td></tr></table></figure>
-<p>在不同负载下，同一个benchmark运行时间不同。benchmark相关的配置文件在文件夹dacapo-9.12-MR1-bach.jar/cnf中。<br>附件：<a href="http://delivery.acm.org/10.1145/1170000/1167488/p169-blackburn.pdf?ip=222.195.68.197&amp;id=1167488&amp;acc=ACTIVE%20SERVICE&amp;key=BF85BBA5741FDC6E%2EA4F9C023AC60E700%2E4D4702B0C3E38B35%2E4D4702B0C3E38B35&amp;__acm__=1537702853_3216a7779381b3c7bf505547e1a4e031" target="_blank" rel="noopener">《The DaCapo Benchmarks: Java Benchmarking Development and Analysis》</a></p>
+<p>在不同负载下，同一个benchmark运行时间不同。benchmark相关的配置文件在文件夹dacapo-9.12-MR1-bach.jar/cnf中。<br>附件：<a href="https://www.colins110.cn/download/dacapo-oopsla-2006.pdf">《The DaCapo Benchmarks: Java Benchmarking Development and Analysis》</a></p>
 </li>
 </ol>
 
@@ -606,7 +606,7 @@
   <li><span>本文标题:</span><a href="/2019/03/19/DaCapo-benchmark环境搭建/">DaCapo benchmark环境搭建</a></li>
   <li><span>文章作者:</span><a href="/" title="访问 Colin 的个人博客">Colin</a></li>
   <li><span>发布时间:</span>2019年03月19日 - 15:06</li>
-  <li><span>最后更新:</span>2019年03月19日 - 15:30</li>
+  <li><span>最后更新:</span>2019年03月19日 - 21:20</li>
   <li><span>原始链接:</span><a href="/2019/03/19/DaCapo-benchmark环境搭建/" title="DaCapo benchmark环境搭建">http://www.colins110.cn/2019/03/19/DaCapo-benchmark环境搭建/</a>
     <span class="copy-path" title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="http://www.colins110.cn/2019/03/19/DaCapo-benchmark环境搭建/" aria-label="复制成功！"></i></span>
   </li>
