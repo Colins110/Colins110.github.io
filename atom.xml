@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.colins110.cn/"/>
-  <updated>2019-03-19T13:20:54.485Z</updated>
+  <updated>2019-03-21T13:58:11.721Z</updated>
   <id>http://www.colins110.cn/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>ubuntu18.04配置PARSEC benchmark</title>
+    <link href="http://www.colins110.cn/2019/03/21/ubuntu18-04%E9%85%8D%E7%BD%AEPARSEC-benchmark/"/>
+    <id>http://www.colins110.cn/2019/03/21/ubuntu18-04配置PARSEC-benchmark/</id>
+    <published>2019-03-21T13:49:01.000Z</published>
+    <updated>2019-03-21T13:58:11.721Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p><a href="http://parsec.cs.princeton.edu/parsec3-doc.htm" target="_blank" rel="noopener">官方文档</a></p><ol><li><p>安装必要环境</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt install make gcc g++</span><br></pre></td></tr></table></figure></li><li><p>下载PARSEC 3.0</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">wget http://parsec.cs.princeton.edu/download/3.0/parsec-3.0.tar.gz</span><br></pre></td></tr></table></figure></li><li><p>解压文件</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">tar -xzf parsec-3.0.tar.gz</span><br><span class="line"><span class="built_in">cd</span> parsec-3.0</span><br></pre></td></tr></table></figure></li><li><p>运行脚本配置环境变量</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">source</span> env.sh</span><br></pre></td></tr></table></figure></li><li><p>编译/运行/卸载 benchmarks</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">parsecmgmt -a build -p streamcluster <span class="comment">#编译streamcluster</span></span><br><span class="line">parsecmgmt -a run -p streamcluster <span class="comment">#运行streamcluster</span></span><br><span class="line">parsecmgmt -a fulluninstall -p streamcluster <span class="comment">#卸载streamcluster</span></span><br><span class="line"><span class="comment">#Note that it may take several hours depending on your machine</span></span><br><span class="line">parsecmgmt -a build -p all <span class="comment">#编译所有的bench</span></span><br><span class="line">parsecmgmt -a run -p all <span class="comment">#运行所有的bench</span></span><br><span class="line">parsecmgmt -a fulluninstall -p streamcluster <span class="comment">#卸载所有的bench</span></span><br></pre></td></tr></table></figure></li></ol>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot; cla
+      
+    
+    </summary>
+    
+      <category term="benchmark" scheme="http://www.colins110.cn/categories/benchmark/"/>
+    
+    
+      <category term="PARSEC" scheme="http://www.colins110.cn/tags/PARSEC/"/>
+    
+  </entry>
   
   <entry>
     <title>DaCapo benchmark环境搭建</title>

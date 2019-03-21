@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[ubuntu18.04配置PARSEC benchmark]]></title>
+    <url>%2F2019%2F03%2F21%2Fubuntu18-04%E9%85%8D%E7%BD%AEPARSEC-benchmark%2F</url>
+    <content type="text"><![CDATA[官方文档 安装必要环境 1sudo apt install make gcc g++ 下载PARSEC 3.0 1wget http://parsec.cs.princeton.edu/download/3.0/parsec-3.0.tar.gz 解压文件 12tar -xzf parsec-3.0.tar.gzcd parsec-3.0 运行脚本配置环境变量 1source env.sh 编译/运行/卸载 benchmarks 1234567parsecmgmt -a build -p streamcluster #编译streamclusterparsecmgmt -a run -p streamcluster #运行streamclusterparsecmgmt -a fulluninstall -p streamcluster #卸载streamcluster#Note that it may take several hours depending on your machineparsecmgmt -a build -p all #编译所有的benchparsecmgmt -a run -p all #运行所有的benchparsecmgmt -a fulluninstall -p streamcluster #卸载所有的bench]]></content>
+      <categories>
+        <category>benchmark</category>
+      </categories>
+      <tags>
+        <tag>PARSEC</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[DaCapo benchmark环境搭建]]></title>
     <url>%2F2019%2F03%2F19%2FDaCapo-benchmark%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA%2F</url>
     <content type="text"><![CDATA[虚拟化性能测试需要使用benchmark测试，这里使用了DaCapo来实现。DaCapo基于java编写，需要java运行时环境，所以需要配置java环境。项目主页 在配置环境之前需要将host的hugepage关闭，运行一下命令关闭： 1sudo bash -c "echo never &gt; /sys/kernel/mm/transparent_hugepage/enabled" 在guest中配置java 123sudo add-apt-repository ppa:webupd8team/javasudo apt updatesudo apt install oracle-java8-installer 使用java --version测试是否安装成功 下载DaCapo包下载地址：dacapo-9.12-MR1-bach.jar 常用命令 12345678java -jar dacapo-9.12-MR1-bach.jar #获取指令使用信息java -jar dacapo-9.12-MR1-bach.jar -l #列出所有benchmarkjava -jar dacapo-9.12-MR1-bach.jar avrora（benchmark名) #运行相应benchmark#dacapo对每一个benchmark提供了三种不同大小的负载java -jar dacapo-9.12-MR1-bach.jar -s small avrora #以小负载运行benchmarkjava -jar dacapo-9.12-MR1-bach.jar -s default avrora #以默认负载运行benchmarkjava -jar dacapo-9.12-MR1-bach.jar -s large avrora #以大负载运行benchmark 在不同负载下，同一个benchmark运行时间不同。benchmark相关的配置文件在文件夹dacapo-9.12-MR1-bach.jar/cnf中。附件：《The DaCapo Benchmarks: Java Benchmarking Development and Analysis》]]></content>
