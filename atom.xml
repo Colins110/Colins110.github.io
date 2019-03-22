@@ -5,9 +5,9 @@
   
   <link href="/atom.xml" rel="self"/>
   
-  <link href="http://www.colins110.cn/"/>
+  <link href="https://www.colins110.cn/"/>
   <updated>2019-03-21T13:58:11.721Z</updated>
-  <id>http://www.colins110.cn/</id>
+  <id>https://www.colins110.cn/</id>
   
   <author>
     <name>Colin</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>ubuntu18.04配置PARSEC benchmark</title>
-    <link href="http://www.colins110.cn/2019/03/21/ubuntu18-04%E9%85%8D%E7%BD%AEPARSEC-benchmark/"/>
-    <id>http://www.colins110.cn/2019/03/21/ubuntu18-04配置PARSEC-benchmark/</id>
+    <link href="https://www.colins110.cn/2019/03/21/ubuntu18-04%E9%85%8D%E7%BD%AEPARSEC-benchmark/"/>
+    <id>https://www.colins110.cn/2019/03/21/ubuntu18-04配置PARSEC-benchmark/</id>
     <published>2019-03-21T13:49:01.000Z</published>
     <updated>2019-03-21T13:58:11.721Z</updated>
     
@@ -34,17 +34,17 @@
     
     </summary>
     
-      <category term="benchmark" scheme="http://www.colins110.cn/categories/benchmark/"/>
+      <category term="benchmark" scheme="https://www.colins110.cn/categories/benchmark/"/>
     
     
-      <category term="PARSEC" scheme="http://www.colins110.cn/tags/PARSEC/"/>
+      <category term="PARSEC" scheme="https://www.colins110.cn/tags/PARSEC/"/>
     
   </entry>
   
   <entry>
     <title>DaCapo benchmark环境搭建</title>
-    <link href="http://www.colins110.cn/2019/03/19/DaCapo-benchmark%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/"/>
-    <id>http://www.colins110.cn/2019/03/19/DaCapo-benchmark环境搭建/</id>
+    <link href="https://www.colins110.cn/2019/03/19/DaCapo-benchmark%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/"/>
+    <id>https://www.colins110.cn/2019/03/19/DaCapo-benchmark环境搭建/</id>
     <published>2019-03-19T07:06:42.000Z</published>
     <updated>2019-03-19T13:20:54.485Z</updated>
     
@@ -59,17 +59,17 @@
     
     </summary>
     
-      <category term="虚拟化" scheme="http://www.colins110.cn/categories/%E8%99%9A%E6%8B%9F%E5%8C%96/"/>
+      <category term="虚拟化" scheme="https://www.colins110.cn/categories/%E8%99%9A%E6%8B%9F%E5%8C%96/"/>
     
     
-      <category term="linux" scheme="http://www.colins110.cn/tags/linux/"/>
+      <category term="linux" scheme="https://www.colins110.cn/tags/linux/"/>
     
   </entry>
   
   <entry>
     <title>[转]Linux内核高端内存</title>
-    <link href="http://www.colins110.cn/2019/03/18/%E8%BD%AC-Linux%E5%86%85%E6%A0%B8%E9%AB%98%E7%AB%AF%E5%86%85%E5%AD%98/"/>
-    <id>http://www.colins110.cn/2019/03/18/转-Linux内核高端内存/</id>
+    <link href="https://www.colins110.cn/2019/03/18/%E8%BD%AC-Linux%E5%86%85%E6%A0%B8%E9%AB%98%E7%AB%AF%E5%86%85%E5%AD%98/"/>
+    <id>https://www.colins110.cn/2019/03/18/转-Linux内核高端内存/</id>
     <published>2019-03-18T06:23:49.000Z</published>
     <updated>2019-03-18T06:52:34.068Z</updated>
     
@@ -84,17 +84,17 @@
     
     </summary>
     
-      <category term="linux内核" scheme="http://www.colins110.cn/categories/linux%E5%86%85%E6%A0%B8/"/>
+      <category term="linux内核" scheme="https://www.colins110.cn/categories/linux%E5%86%85%E6%A0%B8/"/>
     
     
-      <category term="linux内核" scheme="http://www.colins110.cn/tags/linux%E5%86%85%E6%A0%B8/"/>
+      <category term="linux内核" scheme="https://www.colins110.cn/tags/linux%E5%86%85%E6%A0%B8/"/>
     
   </entry>
   
   <entry>
     <title>git设置和取消代理</title>
-    <link href="http://www.colins110.cn/2019/03/08/git%E8%AE%BE%E7%BD%AE%E5%92%8C%E5%8F%96%E6%B6%88%E4%BB%A3%E7%90%86/"/>
-    <id>http://www.colins110.cn/2019/03/08/git设置和取消代理/</id>
+    <link href="https://www.colins110.cn/2019/03/08/git%E8%AE%BE%E7%BD%AE%E5%92%8C%E5%8F%96%E6%B6%88%E4%BB%A3%E7%90%86/"/>
+    <id>https://www.colins110.cn/2019/03/08/git设置和取消代理/</id>
     <published>2019-03-08T11:36:42.000Z</published>
     <updated>2019-03-08T11:44:35.075Z</updated>
     
@@ -109,17 +109,17 @@
     
     </summary>
     
-      <category term="git" scheme="http://www.colins110.cn/categories/git/"/>
+      <category term="git" scheme="https://www.colins110.cn/categories/git/"/>
     
     
-      <category term="git使用" scheme="http://www.colins110.cn/tags/git%E4%BD%BF%E7%94%A8/"/>
+      <category term="git使用" scheme="https://www.colins110.cn/tags/git%E4%BD%BF%E7%94%A8/"/>
     
   </entry>
   
   <entry>
     <title>台湾清华彭明辉教授的研究生手册(学习方法论)</title>
-    <link href="http://www.colins110.cn/2019/03/08/%E5%8F%B0%E6%B9%BE%E6%B8%85%E5%8D%8E%E5%BD%AD%E6%98%8E%E8%BE%89%E6%95%99%E6%8E%88%E7%9A%84%E7%A0%94%E7%A9%B6%E7%94%9F%E6%89%8B%E5%86%8C-%E5%AD%A6%E4%B9%A0%E6%96%B9%E6%B3%95%E8%AE%BA/"/>
-    <id>http://www.colins110.cn/2019/03/08/台湾清华彭明辉教授的研究生手册-学习方法论/</id>
+    <link href="https://www.colins110.cn/2019/03/08/%E5%8F%B0%E6%B9%BE%E6%B8%85%E5%8D%8E%E5%BD%AD%E6%98%8E%E8%BE%89%E6%95%99%E6%8E%88%E7%9A%84%E7%A0%94%E7%A9%B6%E7%94%9F%E6%89%8B%E5%86%8C-%E5%AD%A6%E4%B9%A0%E6%96%B9%E6%B3%95%E8%AE%BA/"/>
+    <id>https://www.colins110.cn/2019/03/08/台湾清华彭明辉教授的研究生手册-学习方法论/</id>
     <published>2019-03-08T11:25:33.000Z</published>
     <updated>2019-03-08T11:27:38.553Z</updated>
     
@@ -134,17 +134,17 @@
     
     </summary>
     
-      <category term="方法论" scheme="http://www.colins110.cn/categories/%E6%96%B9%E6%B3%95%E8%AE%BA/"/>
+      <category term="方法论" scheme="https://www.colins110.cn/categories/%E6%96%B9%E6%B3%95%E8%AE%BA/"/>
     
     
-      <category term="方法论" scheme="http://www.colins110.cn/tags/%E6%96%B9%E6%B3%95%E8%AE%BA/"/>
+      <category term="方法论" scheme="https://www.colins110.cn/tags/%E6%96%B9%E6%B3%95%E8%AE%BA/"/>
     
   </entry>
   
   <entry>
     <title>ubuntu下KVM虚拟机创建</title>
-    <link href="http://www.colins110.cn/2019/02/28/ubuntu%E4%B8%8BKVM%E8%99%9A%E6%8B%9F%E6%9C%BA%E5%88%9B%E5%BB%BA/"/>
-    <id>http://www.colins110.cn/2019/02/28/ubuntu下KVM虚拟机创建/</id>
+    <link href="https://www.colins110.cn/2019/02/28/ubuntu%E4%B8%8BKVM%E8%99%9A%E6%8B%9F%E6%9C%BA%E5%88%9B%E5%BB%BA/"/>
+    <id>https://www.colins110.cn/2019/02/28/ubuntu下KVM虚拟机创建/</id>
     <published>2019-02-28T03:01:27.000Z</published>
     <updated>2019-03-18T02:51:51.911Z</updated>
     
@@ -159,17 +159,17 @@
     
     </summary>
     
-      <category term="虚拟化" scheme="http://www.colins110.cn/categories/%E8%99%9A%E6%8B%9F%E5%8C%96/"/>
+      <category term="虚拟化" scheme="https://www.colins110.cn/categories/%E8%99%9A%E6%8B%9F%E5%8C%96/"/>
     
     
-      <category term="KVM" scheme="http://www.colins110.cn/tags/KVM/"/>
+      <category term="KVM" scheme="https://www.colins110.cn/tags/KVM/"/>
     
   </entry>
   
   <entry>
     <title>ubuntu安装nodejs</title>
-    <link href="http://www.colins110.cn/2018/04/07/ubuntu%E5%AE%89%E8%A3%85nodejs/"/>
-    <id>http://www.colins110.cn/2018/04/07/ubuntu安装nodejs/</id>
+    <link href="https://www.colins110.cn/2018/04/07/ubuntu%E5%AE%89%E8%A3%85nodejs/"/>
+    <id>https://www.colins110.cn/2018/04/07/ubuntu安装nodejs/</id>
     <published>2018-04-07T15:01:04.000Z</published>
     <updated>2019-01-02T10:29:40.000Z</updated>
     
@@ -184,19 +184,19 @@
     
     </summary>
     
-      <category term="ubuntu" scheme="http://www.colins110.cn/categories/ubuntu/"/>
+      <category term="ubuntu" scheme="https://www.colins110.cn/categories/ubuntu/"/>
     
     
-      <category term="ubuntu" scheme="http://www.colins110.cn/tags/ubuntu/"/>
+      <category term="ubuntu" scheme="https://www.colins110.cn/tags/ubuntu/"/>
     
-      <category term="nodejs" scheme="http://www.colins110.cn/tags/nodejs/"/>
+      <category term="nodejs" scheme="https://www.colins110.cn/tags/nodejs/"/>
     
   </entry>
   
   <entry>
     <title>使用IntelliJ IDEA创建Hibernate项目</title>
-    <link href="http://www.colins110.cn/2017/07/09/%E4%BD%BF%E7%94%A8IntelliJ-IDEA%E5%88%9B%E5%BB%BAHibernate%E9%A1%B9%E7%9B%AE/"/>
-    <id>http://www.colins110.cn/2017/07/09/使用IntelliJ-IDEA创建Hibernate项目/</id>
+    <link href="https://www.colins110.cn/2017/07/09/%E4%BD%BF%E7%94%A8IntelliJ-IDEA%E5%88%9B%E5%BB%BAHibernate%E9%A1%B9%E7%9B%AE/"/>
+    <id>https://www.colins110.cn/2017/07/09/使用IntelliJ-IDEA创建Hibernate项目/</id>
     <published>2017-07-09T14:45:28.000Z</published>
     <updated>2019-01-02T10:30:07.000Z</updated>
     
@@ -211,19 +211,19 @@
     
     </summary>
     
-      <category term="Java Web" scheme="http://www.colins110.cn/categories/Java-Web/"/>
+      <category term="Java Web" scheme="https://www.colins110.cn/categories/Java-Web/"/>
     
     
-      <category term="IntelliJ IDEA" scheme="http://www.colins110.cn/tags/IntelliJ-IDEA/"/>
+      <category term="IntelliJ IDEA" scheme="https://www.colins110.cn/tags/IntelliJ-IDEA/"/>
     
-      <category term="Hibernate" scheme="http://www.colins110.cn/tags/Hibernate/"/>
+      <category term="Hibernate" scheme="https://www.colins110.cn/tags/Hibernate/"/>
     
   </entry>
   
   <entry>
     <title>使用win10创意者更新自带工具MBR2GPT完成系统盘的MBR到GPT的无损转换</title>
-    <link href="http://www.colins110.cn/2017/06/11/%E4%BD%BF%E7%94%A8win10%E5%88%9B%E6%84%8F%E8%80%85%E6%9B%B4%E6%96%B0%E8%87%AA%E5%B8%A6%E5%B7%A5%E5%85%B7MBR2GPT%E5%AE%8C%E6%88%90%E7%B3%BB%E7%BB%9F%E7%9B%98%E7%9A%84MBR%E5%88%B0GPT%E7%9A%84%E6%97%A0%E6%8D%9F%E8%BD%AC%E6%8D%A2/"/>
-    <id>http://www.colins110.cn/2017/06/11/使用win10创意者更新自带工具MBR2GPT完成系统盘的MBR到GPT的无损转换/</id>
+    <link href="https://www.colins110.cn/2017/06/11/%E4%BD%BF%E7%94%A8win10%E5%88%9B%E6%84%8F%E8%80%85%E6%9B%B4%E6%96%B0%E8%87%AA%E5%B8%A6%E5%B7%A5%E5%85%B7MBR2GPT%E5%AE%8C%E6%88%90%E7%B3%BB%E7%BB%9F%E7%9B%98%E7%9A%84MBR%E5%88%B0GPT%E7%9A%84%E6%97%A0%E6%8D%9F%E8%BD%AC%E6%8D%A2/"/>
+    <id>https://www.colins110.cn/2017/06/11/使用win10创意者更新自带工具MBR2GPT完成系统盘的MBR到GPT的无损转换/</id>
     <published>2017-06-11T14:30:05.000Z</published>
     <updated>2019-03-08T11:00:27.927Z</updated>
     
@@ -238,19 +238,19 @@
     
     </summary>
     
-      <category term="windows" scheme="http://www.colins110.cn/categories/windows/"/>
+      <category term="windows" scheme="https://www.colins110.cn/categories/windows/"/>
     
     
-      <category term="windows" scheme="http://www.colins110.cn/tags/windows/"/>
+      <category term="windows" scheme="https://www.colins110.cn/tags/windows/"/>
     
-      <category term="分区无损转换" scheme="http://www.colins110.cn/tags/%E5%88%86%E5%8C%BA%E6%97%A0%E6%8D%9F%E8%BD%AC%E6%8D%A2/"/>
+      <category term="分区无损转换" scheme="https://www.colins110.cn/tags/%E5%88%86%E5%8C%BA%E6%97%A0%E6%8D%9F%E8%BD%AC%E6%8D%A2/"/>
     
   </entry>
   
   <entry>
     <title>Markdown语法</title>
-    <link href="http://www.colins110.cn/2017/06/06/Markdown%E8%AF%AD%E6%B3%95/"/>
-    <id>http://www.colins110.cn/2017/06/06/Markdown语法/</id>
+    <link href="https://www.colins110.cn/2017/06/06/Markdown%E8%AF%AD%E6%B3%95/"/>
+    <id>https://www.colins110.cn/2017/06/06/Markdown语法/</id>
     <published>2017-06-06T08:13:42.000Z</published>
     <updated>2018-12-19T15:22:22.000Z</updated>
     
@@ -265,17 +265,17 @@
     
     </summary>
     
-      <category term="Markdown" scheme="http://www.colins110.cn/categories/Markdown/"/>
+      <category term="Markdown" scheme="https://www.colins110.cn/categories/Markdown/"/>
     
     
-      <category term="Markdown" scheme="http://www.colins110.cn/tags/Markdown/"/>
+      <category term="Markdown" scheme="https://www.colins110.cn/tags/Markdown/"/>
     
   </entry>
   
   <entry>
     <title>Win10进入恢复模式</title>
-    <link href="http://www.colins110.cn/2017/06/01/Win10%E8%BF%9B%E5%85%A5%E6%81%A2%E5%A4%8D%E6%A8%A1%E5%BC%8F/"/>
-    <id>http://www.colins110.cn/2017/06/01/Win10进入恢复模式/</id>
+    <link href="https://www.colins110.cn/2017/06/01/Win10%E8%BF%9B%E5%85%A5%E6%81%A2%E5%A4%8D%E6%A8%A1%E5%BC%8F/"/>
+    <id>https://www.colins110.cn/2017/06/01/Win10进入恢复模式/</id>
     <published>2017-06-01T14:17:23.000Z</published>
     <updated>2019-01-02T10:29:58.000Z</updated>
     
@@ -290,12 +290,12 @@
     
     </summary>
     
-      <category term="windows" scheme="http://www.colins110.cn/categories/windows/"/>
+      <category term="windows" scheme="https://www.colins110.cn/categories/windows/"/>
     
     
-      <category term="windows" scheme="http://www.colins110.cn/tags/windows/"/>
+      <category term="windows" scheme="https://www.colins110.cn/tags/windows/"/>
     
-      <category term="恢复模式" scheme="http://www.colins110.cn/tags/%E6%81%A2%E5%A4%8D%E6%A8%A1%E5%BC%8F/"/>
+      <category term="恢复模式" scheme="https://www.colins110.cn/tags/%E6%81%A2%E5%A4%8D%E6%A8%A1%E5%BC%8F/"/>
     
   </entry>
   
