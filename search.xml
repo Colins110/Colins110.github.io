@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[office2016零售版转VOL版]]></title>
+    <url>%2F2019%2F03%2F27%2Foffice2016%E9%9B%B6%E5%94%AE%E7%89%88%E8%BD%ACVOL%E7%89%88%2F</url>
+    <content type="text"><![CDATA[下载脚本管理员下运行脚本，选择要转换的选项，填入秘钥：XQNVK-8JYDB-WJ9W3-YJ8YR-WFG99]]></content>
+      <categories>
+        <category>tools</category>
+      </categories>
+      <tags>
+        <tag>office</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[ubuntu18.04配置PARSEC benchmark]]></title>
     <url>%2F2019%2F03%2F21%2Fubuntu18-04%E9%85%8D%E7%BD%AEPARSEC-benchmark%2F</url>
     <content type="text"><![CDATA[官方文档 安装必要环境 1sudo apt install make gcc g++ 下载PARSEC 3.0 1wget http://parsec.cs.princeton.edu/download/3.0/parsec-3.0.tar.gz 解压文件 12tar -xzf parsec-3.0.tar.gzcd parsec-3.0 运行脚本配置环境变量 1source env.sh 编译/运行/卸载 benchmarks 1234567parsecmgmt -a build -p streamcluster #编译streamclusterparsecmgmt -a run -p streamcluster #运行streamclusterparsecmgmt -a fulluninstall -p streamcluster #卸载streamcluster#Note that it may take several hours depending on your machineparsecmgmt -a build -p all #编译所有的benchparsecmgmt -a run -p all #运行所有的benchparsecmgmt -a fulluninstall -p streamcluster #卸载所有的bench]]></content>

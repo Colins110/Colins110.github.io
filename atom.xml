@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://www.colins110.cn/"/>
-  <updated>2019-03-21T13:58:11.721Z</updated>
+  <updated>2019-03-27T10:47:50.033Z</updated>
   <id>https://www.colins110.cn/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>office2016零售版转VOL版</title>
+    <link href="https://www.colins110.cn/2019/03/27/office2016%E9%9B%B6%E5%94%AE%E7%89%88%E8%BD%ACVOL%E7%89%88/"/>
+    <id>https://www.colins110.cn/2019/03/27/office2016零售版转VOL版/</id>
+    <published>2019-03-27T10:40:23.000Z</published>
+    <updated>2019-03-27T10:47:50.033Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>下载<a href="https://www.colins110.cn/download/Office2016-vol.bat">脚本</a><br>管理员下运行脚本，选择要转换的选项，填入秘钥：XQNVK-8JYDB-WJ9W3-YJ8YR-WFG99<br><img src="/2019/03/27/office2016零售版转VOL版/1.png" alt=""></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot; cla
+      
+    
+    </summary>
+    
+      <category term="tools" scheme="https://www.colins110.cn/categories/tools/"/>
+    
+    
+      <category term="office" scheme="https://www.colins110.cn/tags/office/"/>
+    
+  </entry>
   
   <entry>
     <title>ubuntu18.04配置PARSEC benchmark</title>
