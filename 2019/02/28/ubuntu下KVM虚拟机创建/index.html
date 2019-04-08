@@ -157,7 +157,7 @@
 <meta property="og:site_name" content="Colin&#39;s Home">
 <meta property="og:description" content="网上关于KVM虚拟机创建的文章有很多，但是都是只提供命令，没有解释。对于初学者很不友好，这里记录下我自己的实践。因为我的服务器使用的是ubuntu16.04，所以以下操作都是基于此系统。我是在windows下使用MobaXterm来连接我自己的服务器的，这里强力推荐这款软件，非常方便。  以下代码’#’后的内容为注释‘$’后为执行命令  验证主机是否支持硬件虚拟化12cat /proc/cpuin">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-04-04T04:53:51.785Z">
+<meta property="og:updated_time" content="2019-04-08T10:28:46.622Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="ubuntu下KVM虚拟机创建">
 <meta name="twitter:description" content="网上关于KVM虚拟机创建的文章有很多，但是都是只提供命令，没有解释。对于初学者很不友好，这里记录下我自己的实践。因为我的服务器使用的是ubuntu16.04，所以以下操作都是基于此系统。我是在windows下使用MobaXterm来连接我自己的服务器的，这里强力推荐这款软件，非常方便。  以下代码’#’后的内容为注释‘$’后为执行命令  验证主机是否支持硬件虚拟化12cat /proc/cpuin">
@@ -485,7 +485,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2019-04-04 12:53:51" itemprop="dateModified" datetime="2019-04-04T12:53:51+08:00">2019-04-04</time>
+                <time title="修改时间：2019-04-08 18:28:46" itemprop="dateModified" datetime="2019-04-08T18:28:46+08:00">2019-04-08</time>
               
             
           </span>
@@ -603,7 +603,7 @@
 <h2 id="虚拟机创建"><a href="#虚拟机创建" class="headerlink" title="虚拟机创建"></a>虚拟机创建</h2><p>默认情况下，在安装完上述环境后，会自动配置好一个默认的网络环境<code>default</code>,可以使用如下命令查看：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ sudo virsh net-list --all</span><br></pre></td></tr></table></figure></p>
 <p>假如不小心通过brctl（用于管理桥接网络的工具）删除了default网络，可以通过重新加载预置的XML文件来恢复：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">$ sudo virsh net-define /usr/share/libvirt/networks/default.xml  <span class="comment">#重新定义网络</span></span><br><span class="line">Network default defined from /usr/share/libvirt/networks/default.xml</span><br><span class="line">$ sudo virsh net-autostart default  <span class="comment">#设置default开机自动启动</span></span><br><span class="line">Network default marked as autostarted</span><br><span class="line">$ sudo virsh net-start default  <span class="comment">#启动网络default</span></span><br><span class="line">Network default started</span><br></pre></td></tr></table></figure></p>
 <p>这里默认的配置是nat模式，即guestOS可以通过host上网，而在外部看不到guest。</p>
-<p>为了让非root用户可以直接使用virsh命令管理虚拟机，需要将普通用户加入到kvm和libvirt用户组中：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ sudo adduser &lt;youruser&gt; kvm</span><br><span class="line">$ sudo adduser &lt;youruser&gt; libvirt</span><br></pre></td></tr></table></figure></p>
+<p>为了让非root用户可以直接使用virsh命令管理虚拟机，需要将普通用户加入到kvm和libvirt用户组中：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ sudo adduser &lt;youruser&gt; kvm</span><br><span class="line">$ sudo adduser &lt;youruser&gt; libvirtd</span><br></pre></td></tr></table></figure></p>
 <p>centos 使用：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ sudo gpasswd -a &lt;youruser&gt; kvm</span><br><span class="line">$ sudo gpasswd -a &lt;youruser&gt; libvirt</span><br></pre></td></tr></table></figure></p>
 <p>这个时候重新登录就会使新的用户组成员生效了。</p>
 <h2 id="使用virt-manager创建虚拟机"><a href="#使用virt-manager创建虚拟机" class="headerlink" title="使用virt-manager创建虚拟机"></a>使用virt-manager创建虚拟机</h2><p>新手推荐使用图形化界面创建虚拟机。使用MobaXterm连接服务器时原生支持x11，所以直接在shell中运行virt-manager就可以了，配置同vmware类似，这里就不多介绍了<br>注意:在centos 7 上使用virt-manager安装时，显示协议选择spice时，需要gtk支持：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ sudo yum install gtk3</span><br></pre></td></tr></table></figure></p>
@@ -659,7 +659,7 @@
   <li><span>本文标题:</span><a href="/2019/02/28/ubuntu下KVM虚拟机创建/">ubuntu下KVM虚拟机创建</a></li>
   <li><span>文章作者:</span><a href="/" title="访问 Colin 的个人博客">Colin</a></li>
   <li><span>发布时间:</span>2019年02月28日 - 11:01</li>
-  <li><span>最后更新:</span>2019年04月04日 - 12:53</li>
+  <li><span>最后更新:</span>2019年04月08日 - 18:28</li>
   <li><span>原始链接:</span><a href="/2019/02/28/ubuntu下KVM虚拟机创建/" title="ubuntu下KVM虚拟机创建">https://www.colins110.cn/2019/02/28/ubuntu下KVM虚拟机创建/</a>
     <span class="copy-path" title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="https://www.colins110.cn/2019/02/28/ubuntu下KVM虚拟机创建/" aria-label="复制成功！"></i></span>
   </li>

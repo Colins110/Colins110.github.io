@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://www.colins110.cn/2019/02/28/ubuntu%E4%B8%8BKVM%E8%99%9A%E6%8B%9F%E6%9C%BA%E5%88%9B%E5%BB%BA/</loc>
+    
+    <lastmod>2019-04-08T10:28:46.622Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://www.colins110.cn/2019/04/07/ubuntu16-04%E9%85%8D%E7%BD%AESPARK-bench/</loc>
     
     <lastmod>2019-04-08T08:13:21.213Z</lastmod>
@@ -12,13 +19,6 @@
     <loc>https://www.colins110.cn/2019/04/08/ubuntu16-04%E9%85%8D%E7%BD%AEtpcc-mysql/</loc>
     
     <lastmod>2019-04-08T07:52:54.126Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://www.colins110.cn/2019/02/28/ubuntu%E4%B8%8BKVM%E8%99%9A%E6%8B%9F%E6%9C%BA%E5%88%9B%E5%BB%BA/</loc>
-    
-    <lastmod>2019-04-04T04:53:51.785Z</lastmod>
     
   </url>
   
