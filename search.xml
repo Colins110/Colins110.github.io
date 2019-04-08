@@ -3,7 +3,7 @@
   <entry>
     <title><![CDATA[ubuntu16.04配置tpcc-mysql]]></title>
     <url>%2F2019%2F04%2F08%2Fubuntu16-04%E9%85%8D%E7%BD%AEtpcc-mysql%2F</url>
-    <content type="text"><![CDATA[项目地址\ 安装mysql 12$ sudo apt install mysql-server$ sudo apt install libmysqlclient-dev #解决mysql_config缺失问题 编译 12$ cd src$ make 配置tpcc-mysql 创建数据库tpcctest 1$ sudo mysqladmin create tpcctest -p 创建表 1$ mysql tpcctest &lt; create_table.sql -u root -p 创建indexes和FK 1$ mysql tpcctest &lt; add_fkey_idx.sql -u root -p 填充数据 1$ ./tpcc_load -h 127.0.0.1 -d tcptest -u root -p "123" -w 100 运行 1$ ./tpcc_start -h 127.0.0.1 -p 3306 -d tpcctest -u root -p "123" -c 32 -r 10 -l 10800 参考： 项目主页 TPCC-Mysql 测试]]></content>
+    <content type="text"><![CDATA[项目地址\ 安装mysql 12$ sudo apt install mysql-server$ sudo apt install libmysqlclient-dev #解决mysql_config缺失问题 编译 12$ cd src$ make 配置tpcc-mysql 创建数据库tpcctest 1$ sudo mysqladmin create tpcctest -p 创建表 1$ mysql tpcctest &lt; create_table.sql -u root -p 创建indexes和FK 1$ mysql tpcctest &lt; add_fkey_idx.sql -u root -p 填充数据 1$ ./tpcc_load -h 127.0.0.1 -d tpcctest -u root -p "123" -w 100 运行 1$ ./tpcc_start -h 127.0.0.1 -p 3306 -d tpcctest -u root -p "123" -c 32 -r 10 -l 10800 参考： 项目主页 TPCC-Mysql 测试]]></content>
       <categories>
         <category>benchmark</category>
       </categories>
