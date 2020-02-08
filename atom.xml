@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://www.colins110.cn/"/>
-  <updated>2020-02-07T07:43:09.627Z</updated>
+  <updated>2020-02-08T08:04:45.342Z</updated>
   <id>https://www.colins110.cn/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>centos安装chacha20</title>
+    <link href="https://www.colins110.cn/2020/02/08/centos%E5%AE%89%E8%A3%85chacha20/"/>
+    <id>https://www.colins110.cn/2020/02/08/centos安装chacha20/</id>
+    <published>2020-02-08T08:01:32.000Z</published>
+    <updated>2020-02-08T08:04:45.342Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">yum install m2crypto gcc -y</span><br><span class="line">wget https://download.libsodium.org/libsodium/releases/libsodium-1.0.18.tar.gz</span><br><span class="line">tar zxf libsodium-1.0.18.tar.gz</span><br><span class="line"><span class="built_in">cd</span> libsodium-1.0.18</span><br><span class="line">./configure</span><br><span class="line">make &amp;&amp; make install</span><br><span class="line"><span class="built_in">echo</span> <span class="string">"include ld.so.conf.d/*.conf"</span> &gt; /etc/ld.so.conf</span><br><span class="line"><span class="built_in">echo</span> <span class="string">"/lib"</span> &gt;&gt; /etc/ld.so.conf</span><br><span class="line"><span class="built_in">echo</span> <span class="string">"/usr/lib64"</span> &gt;&gt; /etc/ld.so.conf</span><br><span class="line"><span class="built_in">echo</span> <span class="string">"/usr/local/lib"</span> &gt;&gt; /etc/ld.so.conf</span><br><span class="line">ldconfig</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot; cla
+      
+    
+    </summary>
+    
+      <category term="linux" scheme="https://www.colins110.cn/categories/linux/"/>
+    
+    
+      <category term="centos" scheme="https://www.colins110.cn/tags/centos/"/>
+    
+      <category term="chacha20" scheme="https://www.colins110.cn/tags/chacha20/"/>
+    
+  </entry>
   
   <entry>
     <title>[转]详解LMA&amp;VMA(浅显易懂)</title>
