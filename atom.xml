@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://www.colins110.cn/"/>
-  <updated>2020-02-08T08:04:45.342Z</updated>
+  <updated>2020-03-08T09:55:03.860Z</updated>
   <id>https://www.colins110.cn/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>centos获取内核源码</title>
+    <link href="https://www.colins110.cn/2020/03/08/centos%E8%8E%B7%E5%8F%96%E5%86%85%E6%A0%B8%E6%BA%90%E7%A0%81/"/>
+    <id>https://www.colins110.cn/2020/03/08/centos获取内核源码/</id>
+    <published>2020-03-08T09:47:16.000Z</published>
+    <updated>2020-03-08T09:55:03.860Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>参考<a href="https://wiki.centos.org/HowTos/I_need_the_Kernel_Source" target="_blank" rel="noopener">centos wiki</a></p><ol><li><p>常见编译目录</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[user@host]$ mkdir -p ~/rpmbuild/&#123;BUILD,BUILDROOT,RPMS,SOURCES,SPECS,SRPMS&#125;</span><br><span class="line">[user@host]$ <span class="built_in">echo</span> <span class="string">'%_topdir %(echo $HOME)/rpmbuild'</span> &gt; ~/.rpmmacros</span><br></pre></td></tr></table></figure></li><li><p>安装必要的工具</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">[root@host]<span class="comment"># yum install asciidoc audit-libs-devel bash bc binutils binutils-devel bison diffutils elfutils</span></span><br><span class="line">[root@host]<span class="comment"># yum install elfutils-devel elfutils-libelf-devel findutils flex gawk gcc gettext gzip hmaccalc hostname java-devel</span></span><br><span class="line">[root@host]<span class="comment"># yum install m4 make module-init-tools ncurses-devel net-tools newt-devel numactl-devel openssl</span></span><br><span class="line">[root@host]<span class="comment"># yum install patch pciutils-devel perl perl-ExtUtils-Embed pesign python-devel python-docutils redhat-rpm-config</span></span><br><span class="line">[root@host]<span class="comment"># yum install rpm-build sh-utils tar xmlto xz zlib-devel</span></span><br></pre></td></tr></table></figure></li><li><p>安装包含源码的rpm包</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[user@host]$ rpm -i http://vault.centos.org/7.7.1908/updates/Source/SPackages/kernel-3.10.0-1062.12.1.el7.src.rpm 2&gt;&amp;1 | grep -v exist</span><br></pre></td></tr></table></figure></li></ol><p>可以使用<code>cat /etc/redhat-release</code>和<code>uname -r</code>确定要安装的内核源码。在线安装比较慢，可以到<a href="http://vault.centos.org" target="_blank" rel="noopener">http://vault.centos.org</a>下载后安装。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot; cla
+      
+    
+    </summary>
+    
+      <category term="kernel" scheme="https://www.colins110.cn/categories/kernel/"/>
+    
+    
+      <category term="内核" scheme="https://www.colins110.cn/tags/%E5%86%85%E6%A0%B8/"/>
+    
+  </entry>
   
   <entry>
     <title>centos安装chacha20</title>
